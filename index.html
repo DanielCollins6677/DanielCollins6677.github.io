@@ -5,9 +5,10 @@
         <title>Project: Blog</title>
         <style>
             body {
-                background-color:rgb(218, 222, 245);
+                background-color:rgb(192,41,66);
                 line-height:1.5em;
                 font-family:Arial,sans-serif;
+                margin-bottom: 15%;
             }
             #welcome {
                 font-style:italic;
@@ -18,12 +19,34 @@
                 font-weight:bold;
                 font-size:15.7px;
             }
-            
+            .info {
+                width: 70%;
+                border: 10px solid rgb(217,91,67);
+                margin:auto;
+                margin-bottom: 15px;
+                padding: 5px;
+            }
             td {
                 font-size:0.8em;
             }
-            table, th, td{
-                border: 1px solid black;
+            table, th, td {
+                border: 3px solid rgb(83,119,122);
+            }
+            th {
+
+            }
+
+            #sidebar {
+                float:right;  
+                width:10%;
+                margin-left:10px;
+                position: fixed;
+                right:10px;
+                top:10px;
+                
+            } 
+            #patreon-image{
+                width: 140px;
             }
         </style>
     </head>
@@ -32,22 +55,36 @@
         <h1 id="start">Kostek's blog</h1>
         
         <h2 id="welcome"> Welcome</h2>
+        <p>This is my blog, I will try to update this site as my coding knowledge increases 
 
         <h3>Contents</h3>
         <ul>
             <li><a href="#post-1"> A New Beginnig</a></li>
             <li><a href="#post-2">My Venture into HTML and CSS</a></li>
         </ul>
-        
+        <div class="info">
         <h2 id="post-1">A New Beginning</h2>
         <h6>Posted on 24.01.2020</h6>
         
-        <p>Today I started a new Chapter of my life I decided to finally, actually try to learn how to code. I wasn't sure were to start so after a short google search I found a website going over how to start programming. It gave me the advise to first figure out the basics aka: how does a computer even work. Well, I did that and I did it no where else than Khan Acadamy (KA for short). This was my first interaction with the site and I fell in love immediatly. Although I don't appreciate getting treated like a <em>child</em>.</p>
-        
+       <p>Today I started a new Chapter of my life I decided to finally,
+             actually try to learn how to code. I wasn't sure were to start so after a short
+              google search I found a website going over how to start programming. It gave
+               me the advise to first figure out the basics aka: how does a computer even 
+               work. Well, I did that and I did it no where else than Khan Acadamy (KA for short).
+                This was my first interaction with the site and I fell in love immediatly. Although
+                 I don't appreciate getting treated like a <em>child</em>.</p>
+        </div>
+        <div class="info">
         <h2 id="post-2">My Venture into HTML and CSS</h2>
         <h6>Posted on 25.01.2020</h6>
-        <p>After I woke up today I immediatly went over to my laptop and came back to KA now with the basic computer knowledge needed I was ready to start my descend into the depths of HTML and CSS. Now I was learning it all faster than I thought I would but also I was just enthralled I never knew I could be so excited to learn something new. It was just great and now after I have the tiniest shred of an Idea what I am doing I thought why not make a blog and create an artificial entry from yesterday?</p>
-        
+        <p>After I woke up today I immediatly went over to my laptop 
+            and came back to KA now with the basic computer knowledge needed I was ready
+             to start my descend into the depths of HTML and CSS. Now I was learning it
+              all faster than I thought I would but also I was just enthralled I never 
+              knew I could be so excited to learn something new. It was just great and 
+              now after I have the tiniest shred of an Idea what I am doing I thought 
+              why not make a blog and create an artificial entry from yesterday?</p>
+    </div>
         <h4>Stuff I want to do still</h4>
         <table>
             <thead>
@@ -94,10 +131,19 @@
                 </tr>
             </tbody>
         </table>
+        <div style="position:fixed; left:0px; bottom:0px; padding-left:10px; width:100%; height:15%; background-color: rgb(84,36,55); font-size:20px;">
+            <h6><a href="#start">Back to the Top</a></h6>
+            <h6><a href="https://www.www.w3schools.com/">Another Cool Site for Coding</a></h6>
+        </div>    
+            
         
-        <h6><a href="#start">Back to the Top</a></h6>
-        <h6><a href="https://www.www.w3schools.com/">Another Cool Site for Coding</a></h6>
-        
+
+        <div id="sidebar">
+            <a href="https://www.patreon.com/oskarpotocki">
+                <h5>Give him your money</h5>
+                <img id="patreon-image" src="https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/3878203/39e677d67fbd4aee80530a3dc65f4328/3.png?token-time=2145916800&token-hash=lXQpusCTJCJxNMAURzumWpP020EmT8e1ksOhd18nmYo%3D">
+            </a>
+        </div>
         
     </body>
 </html>
